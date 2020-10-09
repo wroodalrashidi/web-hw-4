@@ -3,32 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>حاسبة الدرجات 🎓🎓</title>
+    <title>Grade Calculator 🎓🎓</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
-      <h1>الحاسبة 🔢</h1>
+    
+      <h1 style="text-align: center;">Calculator 🔢</h1>
 
-      <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
+      <div class="center">Enter all your scores and separate them by a comma</div>
+      
+      <input 
+      id="numbers" 
+      type="text" 
+      required="required"/>
+      
+      <div class="center"><button class="button" onclick="gradeCalc()">Calculate</button></div>
+    
+      <div class="background">
+        <p>Your total score (in numbers) is</p>
+        <div id="sum"></div> 
+  
+        <p>Your final grade (in letters) is </p>
+        <div id="final_grade"></div>
+      </div>
 
-      <input id="Quizes" type="text" />
-      <input id="Midterm" type="text" />
-      <input id="FinalTest" type="text" />
-      <input id="Oral" type="text" />
 
-      <input
-        id="submitButton"
-        type="button"
-        value="calculate"
-        onClick="submit()"
-      />
 
-      <p>مجموع درجاتك (بالأرقام) هو</p>
-      <div id="total_grades"></div>
-
-      <p>درجتك النهائية هي (بالأحرف)</p>
-      <div id="final_grade"></div>
-    </div>
+    <script src="./scripts.js"></script>
   </body>
 </html>

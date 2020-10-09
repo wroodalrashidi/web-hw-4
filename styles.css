@@ -1,1 +1,75 @@
 /* 🎓 تحت هذا التعليق أتحفونا بتصاميمكم التي تليق بقدر حاسبة الدرجات */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body{
+    background: linear-gradient(-45deg, #2434c5cc, #4c135ee0, #7663c7cb, #1021b6cb);
+    background-size: 200% 200%;
+    animation: gradient 4s ease infinite;
+    transition:all 0.5s ease;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+  }
+
+  input[type=text], select {
+    width: 30%;
+    padding: 12px 10px;
+    margin: 20px 450px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(235, 237, 238, 0.897);
+    box-shadow:4px 4px 10px rgba(206, 206, 206, 0.74);
+    padding: 15px;
+    height: 320px;
+    width: 700px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
+  }
+  
+  .button {
+    background-color: #c4cac4; 
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+
+  }
+  .button {
+    background-color: white;
+    color: rgb(26, 25, 25);
+    border:none;
+  }
+  
+  .button:hover {
+    background-color: #260aa19d;
+    color: white;
+  }
+  
+ 
+  
+
+
+  
